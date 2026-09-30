@@ -6,16 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Mohamed Ali - Computer Science Student Portfolio">
   <title>Mohamed Ali|Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
     rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
   <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <div class="bg-grid"></div>
   <div class="glow glow-cyan"></div>
@@ -25,11 +29,35 @@
 
   <header class="header">
     <nav class="nav container">
-      <a href="#home" class="logo"><span>&lt;</span>Eng.Mohamed Ali<span>/&gt;</span></a>
-      <button class="menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false"
-        aria-controls="main-nav">
-        <span></span><span></span><span></span>
-      </button>
+
+      <a href="#home" class="logo">
+        <span>&lt;</span>Eng.Mohamed Ali<span>/&gt;</span>
+      </a>
+
+      <div style="display: flex; align-items: center; gap: 15px;">
+
+        <button
+          class="theme-toggle"
+          id="themeToggleBtn"
+          type="button"
+          aria-label="Toggle theme"
+          title="Toggle Light/Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
       <div class="nav-links" id="main-nav">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
@@ -37,163 +65,396 @@
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
+
     </nav>
   </header>
 
   <main>
+
     <section id="home" class="hero container">
+
       <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> Welcome to My Zone ...
+
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          Welcome to My Zone ...
         </p>
-        <h1>𝑬𝒏𝒈.<span>𝑴𝒐𝒉𝒂𝒎𝒆𝒅 𝑨𝒍𝒊</span></h1>
-        <h2><span id="typing"></span><span class="cursor">|</span></h2>
-        <p class="hero-text">I build practical digital experiences through Programming, Web development, Software
-          Engineering foundations, Databases, and Problem solving.</p>
+
+        <h1>
+          𝑬𝒏𝒈.<span>𝑴𝒐𝒉𝒂𝒎𝒆𝒅 𝑨𝒍𝒊</span>
+        </h1>
+
+        <h2>
+          <span id="typing"></span>
+          <span class="cursor">|</span>
+        </h2>
+
+        <p class="hero-text">
+          I build practical digital experiences through Programming, Web development, Software
+          Engineering foundations, Databases, and Problem solving.
+        </p>
+
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View Projects <i class="fa-solid fa-arrow-down"></i></a>
-          <a class="btn btn-outline" href="#contact">Let's Connect <i class="fa-solid fa-arrow-right"></i></a>
+
+          <a class="btn btn-primary" href="#projects">
+            View Projects
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+
+          <a class="btn btn-outline" href="#contact">
+            Let's Connect
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
         </div>
+
         <div class="tech-line">
-          <span>C++</span><b>/</b><span>Java</span><b>/</b><span>Python</span><b>/</b><span>JavaScript</span><b>/</b><span>SQL</span>
+          <span>C++</span>
+          <b>/</b>
+          <span>Java</span>
+          <b>/</b>
+          <span>Python</span>
+          <b>/</b>
+          <span>JavaScript</span>
+          <b>/</b>
+          <span>SQL</span>
         </div>
+
       </div>
+
       <div class="hero-visual reveal">
+
         <div class="scan-line"></div>
+
         <div class="portrait-frame">
+
           <div class="corner c1"></div>
           <div class="corner c2"></div>
           <div class="corner c3"></div>
           <div class="corner c4"></div>
+
           <img
-            src="images/photo_2026-09-26_15-58-41.jpg"
-            alt="Mohamed Ali" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="image-fallback"><i class="fa-solid fa-code"></i><span>MOHAMED_ALI</span></div>
-         
+            src="images/photo_2026-09-30_16-46-54.jpg"
+            alt="Mohamed Ali"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+
+          <div class="image-fallback">
+            <i class="fa-solid fa-code"></i>
+            <span>MOHAMED_ALI</span>
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
     <section id="about" class="section container">
-      <div class="section-heading reveal"><span>01</span>
+      <div class="section-heading reveal">
+        <span>01</span>
         <h2>About <em>Me</em></h2>
       </div>
+
       <div class="about-grid">
+
         <div class="about-card reveal">
-          <p>I am a Computer Science student at Elsewedy University of Technology with a strong foundation in
-            programming, web development, databases and software engineering.</p>
-          <p>My technical background includes C++, Java, Python, HTML, CSS, JavaScript,Bootstrap,MongoDB and SQL. I
-            enjoy turning ideas
-            into practical projects and improving my problem-solving skills through real implementation.</p>
-          <p>I am interested in internships, training opportunities, freelance projects and professional collaboration.
+
+          <p>
+            I am a Computer Science student at Elsewedy University of Technology with a strong foundation in
+            programming, web development, databases and software engineering.
           </p>
+
+          <p>
+            My technical background includes C++, Java, Python, HTML, CSS, JavaScript, Bootstrap, MongoDB and SQL.
+            I enjoy turning ideas into practical projects and improving my problem-solving skills through real
+            implementation.
+          </p>
+
+          <p>
+            I am interested in internships, training opportunities, freelance projects and professional collaboration.
+          </p>
+
         </div>
+
         <div class="terminal reveal">
-          <div class="terminal-head"><span></span><span></span><span></span><b>mohamed@portfolio:~</b></div>
-          <div class="terminal-body">
-            <p><span class="green">$</span> whoami</p>
-            <p class="cyan">Mohamed Ali</p>
-            <p><span class="green">$</span> focus</p>
-            <p class="purple">Software Engineering + Web Development</p>
-            <p><span class="green">$</span> status</p>
-            <p class="yellow">Open to opportunities_</p>
+
+          <div class="terminal-head">
+            <span></span>
+            <span></span>
+            <span></span>
+            <b>mohamed@portfolio:~</b>
           </div>
+
+          <div class="terminal-body">
+
+            <p>
+              <span class="green">$</span> whoami
+            </p>
+
+            <p class="cyan">Mohamed Ali</p>
+
+            <p>
+              <span class="green">$</span> focus
+            </p>
+
+            <p class="purple">
+              Software Engineering + Web Development
+            </p>
+
+            <p>
+              <span class="green">$</span> status
+            </p>
+
+            <p class="yellow">
+              Open to opportunities_
+            </p>
+
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
     <section id="skills" class="section container">
-      <div class="section-heading reveal"><span>02</span>
+
+      <div class="section-heading reveal">
+        <span>02</span>
         <h2>Technical <em>Skills</em></h2>
       </div>
+
       <div class="skills-grid">
-        <article class="skill-card reveal"><i class="fa-solid fa-terminal"></i>
+
+        <article class="skill-card reveal">
+          <i class="fa-solid fa-terminal"></i>
           <h3>Programming</h3>
           <p>C++ · Java · Python · JavaScript</p>
         </article>
-        <article class="skill-card reveal"><i class="fa-solid fa-globe"></i>
+
+        <article class="skill-card reveal">
+          <i class="fa-solid fa-globe"></i>
           <h3>Web Development</h3>
           <p>HTML · CSS · JavaScript</p>
         </article>
-        <article class="skill-card reveal"><i class="fa-solid fa-database"></i>
+
+        <article class="skill-card reveal">
+          <i class="fa-solid fa-database"></i>
           <h3>Database</h3>
           <p>SQL · MySQL · SQL Server · SQLite</p>
         </article>
-        <article class="skill-card reveal"><i class="fa-solid fa-diagram-project"></i>
+
+        <article class="skill-card reveal">
+          <i class="fa-solid fa-diagram-project"></i>
           <h3>Software Engineering</h3>
           <p>OOP · Algorithms · UML · Software Design</p>
         </article>
+
       </div>
+
     </section>
 
     <section id="projects" class="section container">
-      <div class="section-heading reveal"><span>03</span>
+
+      <div class="section-heading reveal">
+        <span>03</span>
         <h2>Selected <em>Projects</em></h2>
       </div>
+
       <div class="projects-grid">
+
         <article class="project-card featured reveal">
+
           <div class="project-number">01</div>
-          <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+
+          <div class="project-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+
           <h3>Yom-B-Yom Dashboard</h3>
-          <p>Team web development project with tasks, notes, calendar, finance and social-life sections.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a
-            href="https://abdonagah73.github.io/Yom-B-Yom/" target="_blank" rel="noopener">Live Project <i
-              class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+          <p>
+            Team web development project with tasks, notes, calendar, finance and social-life sections.
+          </p>
+
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <a href="https://abdonagah73.github.io/Yom-B-Yom/" target="_blank" rel="noopener">
+            Live Project
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+
         </article>
+
         <article class="project-card reveal">
+
           <div class="project-number">02</div>
-          <div class="project-icon"><i class="fa-solid fa-code"></i></div>
+
+          <div class="project-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
           <h3>Process Flow Manager</h3>
-          <p>Academic C++ project focused on algorithms, data structures and process-flow logic.</p>
-          <div class="tags"><span>C++</span><span>Algorithms</span><span>Data Structures</span></div><span
-            class="project-status">Academic Project</span>
+
+          <p>
+            Academic C++ project focused on algorithms, data structures and process-flow logic.
+          </p>
+          <div class="tags">
+            <span>C++</span>
+            <span>Algorithms</span>
+            <span>Data Structures</span>
+          </div>
+
+          <span class="project-status">
+            Academic Project
+          </span>
+
         </article>
+
         <article class="project-card reveal">
+
           <div class="project-number">03</div>
-          <div class="project-icon"><i class="fa-brands fa-java"></i></div>
+
+          <div class="project-icon">
+            <i class="fa-brands fa-java"></i>
+          </div>
+
           <h3>Java Development Work</h3>
-          <p>Java development work focused on object-oriented programming and software structure.</p>
-          <div class="tags"><span>Java</span><span>OOP</span></div><span class="project-status">Academic Project</span>
+
+          <p>
+            Java development work focused on object-oriented programming and software structure.
+          </p>
+
+          <div class="tags">
+            <span>Java</span>
+            <span>OOP</span>
+          </div>
+
+          <span class="project-status">
+            Academic Project
+          </span>
+
         </article>
+
         <article class="project-card reveal">
+
           <div class="project-number">04</div>
-          <div class="project-icon"><i class="fa-solid fa-sitemap"></i></div>
+
+          <div class="project-icon">
+            <i class="fa-solid fa-sitemap"></i>
+          </div>
+
           <h3>System Design &amp; UML</h3>
-          <p>System modeling and software design work using UML diagrams and structured analysis.</p>
-          <div class="tags"><span>UML</span><span>System Design</span></div><span class="project-status">Academic
-            Project</span>
+
+          <p>
+            System modeling and software design work using UML diagrams and structured analysis.
+          </p>
+
+          <div class="tags">
+            <span>UML</span>
+            <span>System Design</span>
+          </div>
+
+          <span class="project-status">
+            Academic Project
+          </span>
+
         </article>
+
         <article class="project-card reveal">
+
           <div class="project-number">05</div>
-          <div class="project-icon"><i class="fa-solid fa-film"></i></div>
+
+          <div class="project-icon">
+            <i class="fa-solid fa-film"></i>
+          </div>
+
           <h3>Dubai Cinema Project</h3>
-          <p>Frontend web design project focused on building a clear and engaging cinema interface.</p>
-          <div class="tags"><span>Web Design</span><span>Frontend</span></div><span class="project-status">Project
-            Experience</span>
+
+          <p>
+            Frontend web design project focused on building a clear and engaging cinema interface.
+          </p>
+
+          <div class="tags">
+            <span>Web Design</span>
+            <span>Frontend</span>
+          </div>
+
+          <span class="project-status">
+            Project Experience
+          </span>
+
         </article>
+
       </div>
+
     </section>
 
     <section id="contact" class="section container contact-section">
+
       <div class="contact-box reveal">
+
         <p class="eyebrow">04 / CONTACT</p>
-        <h2>Let's build something <span>useful.</span></h2>
-        <p>If you have an internship, training opportunity, freelance project or professional collaboration in mind,
-          feel free to reach out.</p>
+
+        <h2>
+          Let's build something <span>useful.</span>
+        </h2>
+
+        <p>
+          If you have an internship, training opportunity, freelance project or professional collaboration in mind,
+          feel free to reach out.
+        </p>
+
         <div class="contact-actions">
-          <a class="contact-link linkedin" href="https://www.linkedin.com/in/ENG-MOHAMED-ALI-347838345" target="_blank"
-            rel="noopener"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
-          <a class="contact-link whatsapp" href="https://wa.me/201029937047" target="_blank" rel="noopener"><i
-              class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+
+          <a
+            class="contact-link linkedin"
+            href="https://www.linkedin.com/in/ENG-MOHAMED-ALI-347838345"
+            target="_blank"
+            rel="noopener">
+            <i class="fa-brands fa-linkedin-in"></i>
+            LinkedIn
+          </a>
+
+          <a
+            class="contact-link whatsapp"
+            href="https://wa.me/201029937047"
+            target="_blank"
+            rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+          </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
   <footer class="footer">
-    <div class="container"><span>© 2026 Mohamed Ali. All rights reserved.</span><span class="footer-code">&lt;code
-        /&gt;</span></div>
+
+    <div class="container">
+
+      <span>
+        © 2026 Mohamed Ali. All rights reserved.
+      </span>
+
+      <span class="footer-code">
+        &lt;code /&gt;
+      </span>
+
+    </div>
+
   </footer>
+
   <script src="js/script.js"></script>
+
 </body>
 
 </html>
